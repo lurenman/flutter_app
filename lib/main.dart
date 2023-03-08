@@ -3,6 +3,7 @@ import 'package:flutter_app/learn/page/AppLifecyclePage.dart';
 import 'package:flutter_app/learn/page/PhotoAppPage.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
+import 'learn/page/DataStoragePage.dart';
 import 'learn/page/GesturePage.dart';
 import 'learn/page/LaunchPage.dart';
 import 'learn/page/ResPage.dart';
@@ -11,6 +12,10 @@ import 'learn/page/StatelessWidgetPage.dart';
 import 'learn/page/WidgetLifecyclePage.dart';
 import 'learn/page/animation/AnimationPage.dart';
 
+/**
+ * 库插件下载地址：https://pub.flutter-io.cn/
+ *
+ */
 void main() {
   runApp(const MyApp());
 }
@@ -206,6 +211,21 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "AnimationPage",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DataStoragePage()));
+                        },
+                        child: Text(
+                          "数据存储",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
