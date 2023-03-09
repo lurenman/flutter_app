@@ -4,6 +4,7 @@ import 'package:flutter_app/learn/page/PhotoAppPage.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 import 'learn/page/DataStoragePage.dart';
+import 'learn/page/FuturePage.dart';
 import 'learn/page/GesturePage.dart';
 import 'learn/page/LaunchPage.dart';
 import 'learn/page/ResPage.dart';
@@ -226,6 +227,21 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "数据存储",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FuturePage()));
+                        },
+                        child: Text(
+                          "Future",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
