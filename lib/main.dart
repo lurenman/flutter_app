@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/learn/page/AppLifecyclePage.dart';
 import 'package:flutter_app/learn/page/PhotoAppPage.dart';
+import 'package:flutter_app/learn/page/TestPluginPage.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 import 'learn/page/DataStoragePage.dart';
@@ -242,6 +243,21 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "Future",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => TestPluginPage()));
+                        },
+                        child: Text(
+                          "引用Test插件",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),

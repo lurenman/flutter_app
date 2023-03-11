@@ -41,6 +41,14 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  flutter_plugin_test:
+    #本地插件引用
+#    path: D:\androidxm\githubme\flutter_plugin_test
+    #github插件引用
+     git:
+        url: https://github.com/lurenman/flutter_plugin_test
+        ref: master
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

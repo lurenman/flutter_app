@@ -110,6 +110,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.8"
+  flutter_plugin_test:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: bde0e0b79fab5d09d18b00ab0664b1ed5634df41
+      url: "https://github.com/lurenman/flutter_plugin_test"
+    source: git
+    version: "0.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
