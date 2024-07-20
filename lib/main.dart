@@ -84,7 +84,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -99,7 +102,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -114,7 +120,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -129,7 +138,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -144,7 +156,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -159,7 +174,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -174,7 +192,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -189,7 +210,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -204,7 +228,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -219,7 +246,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -234,7 +264,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -249,7 +282,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
                         onPressed: () {
                           Navigator.push(
                               context,

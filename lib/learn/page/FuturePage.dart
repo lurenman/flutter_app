@@ -37,7 +37,9 @@ class _FuturePageState extends State<FuturePage> {
                 margin: EdgeInsets.fromLTRB(18, 20, 18, 0),
                 width: double.infinity,
                 child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                    ),
                     onPressed: () {
                       var result = testFuture();
                       //onError和catchError 互斥 优先onError
