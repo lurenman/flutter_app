@@ -1,7 +1,9 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/learn/page/AppLifecyclePage.dart';
 import 'package:flutter_app/learn/page/PhotoAppPage.dart';
 import 'package:flutter_app/learn/page/TestPluginPage.dart';
+import 'package:flutter_app/learn/router/AppRouter.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 import 'learn/page/DataStoragePage.dart';
@@ -51,7 +53,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-
+  // 初始化路由
+  FluroRouter router = AppRouter.router;
+  @override
+  void initState() {
+    super.initState();
+    AppRouter().defineRoutes();
+  }
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -68,6 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: EdgeInsets.fromLTRB(18, 0, 18, 0),
           margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
           child: ListView(
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 40),
             children: [
               Column(
                 mainAxisSize: MainAxisSize.min,
@@ -294,6 +303,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "引用Test插件",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          //参考：https://blog.csdn.net/yikezhuixun/article/details/133066289
+                          AppRouter.router.navigateTo(context, '/home2');
+                        },
+                        child: Text(
+                          "Fluro",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),

@@ -8,8 +8,8 @@ class ObjectClass {
     //内部访问
     print(student.school);
 
-    var constClass = ConstClass("const", 100);
-    constClass.printLog();
+    // var constClass = ConstClass("const", 100);
+    // constClass.printLog();
   }
 }
 
@@ -68,20 +68,20 @@ class Boy extends Person {
     常量构造函数不允许有函数体；
     实例化时需要加 const 否则实例化的对象仍然可以修改变量值
  */
-class ConstClass with WithClass {
-  final String name;
-
-  final int age;
-
-  const ConstClass(this.name, this.age);
-
-  void test() {}
-
-  @override
-  void printLog() {
-    print("this is ConstClass printLog");
-  }
-}
+// class ConstClass with WithClass {
+//   final String name;
+//
+//   final int age;
+//
+//   const ConstClass(this.name, this.age);
+//
+//   void test() {}
+//
+//   @override
+//   void printLog() {
+//     print("this is ConstClass printLog");
+//   }
+// }
 // with 可以理解为使用接口用的可以多继承， dart没有接口
 class WithClass {
   void printLog() {
