@@ -6,6 +6,7 @@ import 'package:flutter_app/learn/page/TestPluginPage.dart';
 import 'package:flutter_app/learn/router/AppRouter.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
+import 'learn/page/BlocPage.dart';
 import 'learn/page/DataStoragePage.dart';
 import 'learn/page/FuturePage.dart';
 import 'learn/page/GesturePage.dart';
@@ -319,6 +320,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "Fluro",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => BlocPage()));
+                        },
+                        child: Text(
+                          "bloc",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
