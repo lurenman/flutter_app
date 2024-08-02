@@ -7,6 +7,7 @@ import 'package:flutter_app/learn/router/AppRouter.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 import 'learn/page/BlocPage.dart';
+import 'learn/page/CityPickersPage.dart';
 import 'learn/page/DataStoragePage.dart';
 import 'learn/page/FuturePage.dart';
 import 'learn/page/GesturePage.dart';
@@ -338,6 +339,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "bloc",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CityPickersPage()));
+                        },
+                        child: Text(
+                          "CityPickers",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
