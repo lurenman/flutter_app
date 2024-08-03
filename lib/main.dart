@@ -9,6 +9,7 @@ import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 import 'learn/page/BlocPage.dart';
 import 'learn/page/CityPickersPage.dart';
 import 'learn/page/DataStoragePage.dart';
+import 'learn/page/FFloatPage.dart';
 import 'learn/page/FuturePage.dart';
 import 'learn/page/GesturePage.dart';
 import 'learn/page/LaunchPage.dart';
@@ -399,6 +400,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "WebViewPage",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FFloatPage()));
+                        },
+                        child: Text(
+                          "FFloatPage",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
