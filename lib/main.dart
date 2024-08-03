@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/learn/page/AppLifecyclePage.dart';
+import 'package:flutter_app/learn/page/FlutterPickerPage.dart';
 import 'package:flutter_app/learn/page/PhotoAppPage.dart';
 import 'package:flutter_app/learn/page/TestPluginPage.dart';
 import 'package:flutter_app/learn/router/AppRouter.dart';
@@ -418,6 +419,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "FFloatPage",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FlutterPickerPage()));
+                        },
+                        child: Text(
+                          "FlutterPicker",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
