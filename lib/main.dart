@@ -16,6 +16,7 @@ import 'learn/page/ResPage.dart';
 import 'learn/page/ScrollablePositionedListPage.dart';
 import 'learn/page/StatefullWidgetPage.dart';
 import 'learn/page/StatelessWidgetPage.dart';
+import 'learn/page/WebViewPage.dart';
 import 'learn/page/WidgetLifecyclePage.dart';
 import 'learn/page/animation/AnimationPage.dart';
 
@@ -56,13 +57,16 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
   // 初始化路由
   FluroRouter router = AppRouter.router;
+
   @override
   void initState() {
     super.initState();
     AppRouter().defineRoutes();
   }
+
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -314,7 +318,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.blue),
+                              MaterialStateProperty.all<Color>(Colors.blue),
                         ),
                         onPressed: () {
                           //参考：https://blog.csdn.net/yikezhuixun/article/details/133066289
@@ -330,7 +334,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.blue),
+                              MaterialStateProperty.all<Color>(Colors.blue),
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -348,7 +352,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.blue),
+                              MaterialStateProperty.all<Color>(Colors.blue),
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -366,16 +370,35 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.blue),
+                              MaterialStateProperty.all<Color>(Colors.blue),
                         ),
                         onPressed: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ScrollablePositionedListPage()));
+                                  builder: (context) =>
+                                      ScrollablePositionedListPage()));
                         },
                         child: Text(
                           "ScrollablePositionedList",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => WebViewPage()));
+                        },
+                        child: Text(
+                          "WebViewPage",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
