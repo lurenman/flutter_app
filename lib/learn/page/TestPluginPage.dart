@@ -36,7 +36,10 @@ class _TestPluginPageState extends State<TestPluginPage> {
               margin: EdgeInsets.fromLTRB(18, 30, 18, 0),
               width: double.infinity,
               child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(),
+                  style: ButtonStyle(
+                    backgroundColor:
+                    MaterialStateProperty.all<Color>(Colors.blue),
+                  ),
                   onPressed: () async {
                     try {
                       // var result = await _flutterPluginTestPlugin.getResult(1, 2);
