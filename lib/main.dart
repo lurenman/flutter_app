@@ -10,6 +10,7 @@ import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 import 'learn/page/BlocPage.dart';
 import 'learn/page/CityPickersPage.dart';
 import 'learn/page/DataStoragePage.dart';
+import 'learn/page/EasyRefreshPage.dart';
 import 'learn/page/FFloatPage.dart';
 import 'learn/page/FuturePage.dart';
 import 'learn/page/GesturePage.dart';
@@ -437,6 +438,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "FlutterPicker",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => EasyRefreshPage()));
+                        },
+                        child: Text(
+                          "easy_refresh",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),

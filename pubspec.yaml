@@ -48,6 +48,7 @@ dependencies:
   ffloat_nullsafety: ^3.3.6
 #  flutter_picker: ^2.1.0
   flutter_picker_plus: ^1.3.0
+  easy_refresh: ^3.4.0
   flutter_plugin_test:
     #本地插件引用
 #    path: D:\androidxm\githubme\flutter_plugin_test
