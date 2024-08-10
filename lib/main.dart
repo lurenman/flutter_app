@@ -19,6 +19,7 @@ import 'learn/page/ResPage.dart';
 import 'learn/page/ScrollablePositionedListPage.dart';
 import 'learn/page/StatefullWidgetPage.dart';
 import 'learn/page/StatelessWidgetPage.dart';
+import 'learn/page/SwiperPage.dart';
 import 'learn/page/WebViewPage.dart';
 import 'learn/page/WidgetLifecyclePage.dart';
 import 'learn/page/animation/AnimationPage.dart';
@@ -410,7 +411,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.blue),
+                              MaterialStateProperty.all<Color>(Colors.blue),
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -428,7 +429,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.blue),
+                              MaterialStateProperty.all<Color>(Colors.blue),
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -446,7 +447,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.blue),
+                              MaterialStateProperty.all<Color>(Colors.blue),
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -456,6 +457,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "easy_refresh",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SwiperPage()));
+                        },
+                        child: Text(
+                          "Swiper",
                           style: TextStyle(color: Colors.white),
                         )),
                   ),
