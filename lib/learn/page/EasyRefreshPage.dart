@@ -21,6 +21,26 @@ class _EasyRefreshPageState extends State<EasyRefreshPage> {
       controlFinishRefresh: true,
       controlFinishLoad: true,
     );
+    EasyRefresh.defaultHeaderBuilder = () => ClassicHeader(
+        dragText: '下拉可以刷新',
+        armedText: '松开立即刷新',
+        readyText: '正在刷新数据中...',
+        processingText: '正在刷新数据中...',
+        processedText: '下拉刷新成功',
+        noMoreText: '无数据',
+        failedText: '下拉刷新失败',
+        messageText: '最后更新时间 %T',
+        showMessage: false);
+    EasyRefresh.defaultFooterBuilder = () => ClassicFooter(
+        dragText: '上拉可以加载更多',
+        armedText: '松开立即加载更多',
+        readyText: '正在加载更多数据...',
+        processingText: '正在加载更多数据...',
+        processedText: '上拉加载成功',
+        noMoreText: '没有更多了',
+        failedText: '上拉加载失败',
+        messageText: '最后更新时间 %T',
+        showMessage: false);
   }
 
   @override
@@ -46,8 +66,8 @@ class _EasyRefreshPageState extends State<EasyRefreshPage> {
         ),
         body: EasyRefresh(
           controller: _controller,
-          header: const ClassicHeader(),
-          footer: const ClassicFooter(),
+          header: EasyRefresh.defaultHeaderBuilder(),
+          footer: EasyRefresh.defaultFooterBuilder(),
           onRefresh: () async {
             await Future.delayed(const Duration(seconds: 1));
             if (!mounted) {
